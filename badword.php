@@ -9,5 +9,8 @@
 <body>
     <div> La frase è: <?php echo $_GET['frase'] ?> </div>
     <div> La frase è lunga: <?php echo strlen($_GET['frase']) ?> caratteri</div>
+    <div> La frase censurata è: <?php echo str_replace($_GET['badword'],'***',$_GET['frase']) ?> </div>
+    <div> La frase censurata è lunga: <?php echo strlen(str_replace($_GET['badword'],'***',$_GET['frase'])) ?> </div>
+
 </body>
 </html>
