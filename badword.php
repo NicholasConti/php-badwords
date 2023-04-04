@@ -1,5 +1,6 @@
 <?php
 
-//echo $_POST['pollo'];
+echo $_GET['frase'];
+echo strlen($_GET['frase']);
    
 ?>
